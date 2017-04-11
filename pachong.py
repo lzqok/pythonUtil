@@ -33,6 +33,7 @@ zhangxueyou_url = "http://www.228.com.cn/ticket-238802251.html"
 oreder_url = "http://www.228.com.cn/cart/toOrderSure.html"
 pay_oreder = "https://excashier.alipay.com/standard/auth.html"
 ticket_num = "ticket"
+index = 1 #票价数组下标
 def login():
 	sleep(1)
 	b.fill("username",username)
@@ -46,9 +47,7 @@ def qianpiao():
 	login()
 	b.visit(zhangxueyou_url)
 
-	# if is_text_presenßßt(zhangxueyou_url):
 	ul = b.find_by_name(u"2017[A CLASSIC TOUR学友.经典] 世界巡回演唱会—扬州站")
-	index = 1
 	print(len(ul))
 	for i in range(index,len(ul)):
 		ul[i].check()
