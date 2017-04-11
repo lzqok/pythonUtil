@@ -32,7 +32,7 @@ login_url = "http://www.228.com.cn/auth/login"
 zhangxueyou_url = "http://www.228.com.cn/ticket-238802251.html"
 oreder_url = "http://www.228.com.cn/cart/toOrderSure.html"
 pay_oreder = "https://excashier.alipay.com/standard/auth.html"
-ticket_num = "ticket"
+ticket_num = 2
 index = 1 #票价数组下标
 def login():
 	sleep(1)
